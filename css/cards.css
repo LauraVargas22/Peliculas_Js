@@ -1,6 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 .cards__movies {
-    background: black;
+    background: rgba(36, 32, 32, 0.856);
     color: white;
     margin-bottom: 2rem;
     padding: 2rem;
+}
+
+.subtitle {
+    font-family: "Patrick Hand", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(3rem, 2.2174rem + 3.4783vw, 5rem);
+}
+
+.card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.movie__title {
+    font-family: "Patrick Hand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: brown;
+}
+.img-fluid {
+    width: 90%;
+    height: 12rem;
+}
+
+.movie__description {
+    color: black;
+    text-align: justify;
+    font-size: clamp(1.3rem, 1.2217rem + 0.3478vw, 1.5rem);
+    font-family: "Molengo", serif;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Molengo", serif;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 1.2217rem + 0.3478vw, 1.5rem);
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

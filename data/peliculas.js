@@ -6,7 +6,7 @@ export const peliculas = [
         duration: '148 minutes',
         genre: 'Science Fiction, Action, Thriller',
         releaseDate: 'July 16, 2010',
-        image: "../images/inception.png"
+        image: "../images/movies/inception.png"
     },
     {
         title: 'The Shawshank Redemption',
@@ -14,7 +14,8 @@ export const peliculas = [
         casting: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton', 'William Sadler'],
         duration: '142 minutes',
         genre: 'Drama',
-        releaseDate: 'September 14, 1994'
+        releaseDate: 'September 14, 1994',
+        image: "../images/movies/redemption.png"
     },
     {
         title: 'The Dark Knight',
@@ -22,7 +23,8 @@ export const peliculas = [
         casting: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart', 'Michael Caine', 'Maggie Gyllenhaal'],
         duration: '152 minutes',
         genre: 'Action, Crime, Drama',
-        releaseDate: 'July 18, 2008'
+        releaseDate: 'July 18, 2008',
+        image: "../images/movies/darkKnight.png"
     },
     {
         title: 'Pulp Fiction',
@@ -30,7 +32,8 @@ export const peliculas = [
         casting: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson', 'Bruce Willis', 'Harvey Keitel'],
         duration: '154 minutes',
         genre: 'Crime, Drama',
-        releaseDate: 'October 14, 1994'
+        releaseDate: 'October 14, 1994',
+        image: "../images/movies/pulpFiction.png"
     },
     {
         title: 'Forrest Gump',
@@ -38,7 +41,8 @@ export const peliculas = [
         casting: ['Tom Hanks', 'Robin Wright', 'Gary Sinise', 'Mykelti Williamson'],
         duration: '142 minutes',
         genre: 'Drama, Comedy',
-        releaseDate: 'July 6, 1994'
+        releaseDate: 'July 6, 1994',
+        image: "../images/movies/forrestGump.png"
     },
     {
         title: 'Gladiator',
@@ -46,7 +50,8 @@ export const peliculas = [
         casting: ['Russell Crowe', 'Joaquin Phoenix', 'Connie Nielsen', 'Oliver Reed'],
         duration: '155 minutes',
         genre: 'Drama, Action, History',
-        releaseDate: 'May 5, 2000'
+        releaseDate: 'May 5, 2000',
+        image: "../images/movies/gladiator.png"
     },
     {
         title: 'The Matrix',
@@ -54,7 +59,8 @@ export const peliculas = [
         casting: ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss', 'Hugo Weaving'],
         duration: '136 minutes',
         genre: 'Science Fiction, Action',
-        releaseDate: 'March 31, 1999'
+        releaseDate: 'March 31, 1999',
+        image: "../images/movies/theMatrix.png"
     },
     {
         title: 'Titanic',
@@ -62,7 +68,8 @@ export const peliculas = [
         casting: ['Leonardo DiCaprio', 'Kate Winslet', 'Billy Zane', 'Danny Nucci'],
         duration: '195 minutes',
         genre: 'Romance, Drama',
-        releaseDate: 'December 19, 1997'
+        releaseDate: 'December 19, 1997',
+        image: "../images/movies/titanic.png"
     },
     {
         title: 'Avatar',
@@ -70,7 +77,8 @@ export const peliculas = [
         casting: ['Sam Worthington', 'Zoe Saldana', 'Sigourney Weaver', 'Stephen Lang'],
         duration: '162 minutes',
         genre: 'Science Fiction, Adventure',
-        releaseDate: 'December 18, 2009'
+        releaseDate: 'December 18, 2009',
+        image: "../images/movies/avatar.png"
     },
     {
         title: 'The Godfather',
@@ -78,7 +86,8 @@ export const peliculas = [
         casting: ['Marlon Brando', 'Al Pacino', 'James Caan', 'Diane Keaton'],
         duration: '175 minutes',
         genre: 'Crime, Drama',
-        releaseDate: 'March 24, 1972'
+        releaseDate: 'March 24, 1972',
+        image: "../images/movies/theGodfather.png"
     },
     {
         title: 'The Lion King',
@@ -86,7 +95,8 @@ export const peliculas = [
         casting: ['Matthew Broderick', 'James Earl Jones', 'Jeremy Irons', 'Whoopi Goldberg'],
         duration: '88 minutes',
         genre: 'Animation, Adventure, Drama',
-        releaseDate: 'June 24, 1994'
+        releaseDate: 'June 24, 1994',
+        image: "../images/movies/theLionKing.png"
     },
     {
         title: 'The Silence of the Lambs',
@@ -94,7 +104,8 @@ export const peliculas = [
         casting: ['Jodie Foster', 'Anthony Hopkins', 'Scott Glenn', 'Ted Levine'],
         duration: '118 minutes',
         genre: 'Thriller, Crime, Drama',
-        releaseDate: 'February 14, 1991'
+        releaseDate: 'February 14, 1991',
+        image: "../images/movies/SilenceLambs.png"
     },
     {
         title: 'Schindler\'s List',
@@ -102,7 +113,8 @@ export const peliculas = [
         casting: ['Liam Neeson', 'Ben Kingsley', 'Ralph Fiennes', 'Caroline Goodall'],
         duration: '195 minutes',
         genre: 'History, Drama, War',
-        releaseDate: 'December 15, 1993'
+        releaseDate: 'December 15, 1993',
+        image: "../images/movies/schindlers.png"
     },
     {
         title: 'Interstellar',
@@ -110,15 +122,17 @@ export const peliculas = [
         casting: ['Matthew McConaughey', 'Anne Hathaway', 'Jessica Chastain', 'Michael Caine'],
         duration: '169 minutes',
         genre: 'Science Fiction, Drama, Adventure',
-        releaseDate: 'November 7, 2014'
+        releaseDate: 'November 7, 2014',
+        image: "../images/movies/interstellar.png"
     },
     {
-        title: 'Star Wars: Episode IV - A New Hope',
+        title: 'Star Wars: A New Hope',
         description: 'A young farmer joins a group of rebels to fight against the Galactic Empire and its fearsome leader, Darth Vader.',
         casting: ['Mark Hamill', 'Harrison Ford', 'Carrie Fisher', 'Alec Guinness'],
         duration: '121 minutes',
         genre: 'Science Fiction, Adventure',
-        releaseDate: 'May 25, 1977'
+        releaseDate: 'May 25, 1977',
+        image: "../images/movies/starwars.png"
     },
     {
         title: 'Jaws',
@@ -126,7 +140,8 @@ export const peliculas = [
         casting: ['Roy Scheider', 'Robert Shaw', 'Richard Dreyfuss', 'Lorraine Gary'],
         duration: '124 minutes',
         genre: 'Horror, Thriller',
-        releaseDate: 'June 20, 1975'
+        releaseDate: 'June 20, 1975',
+        image: "../images/movies/jaws.png"
     },
     {
         title: 'Mad Max: Fury Road',
@@ -134,7 +149,8 @@ export const peliculas = [
         casting: ['Tom Hardy', 'Charlize Theron', 'Nicholas Hoult', 'Hugh Keays-Byrne'],
         duration: '120 minutes',
         genre: 'Action, Science Fiction, Adventure',
-        releaseDate: 'May 15, 2015'
+        releaseDate: 'May 15, 2015',
+        image: "../images/movies/madMax.png"
     },
     {
         title: 'The Avengers',
@@ -142,7 +158,8 @@ export const peliculas = [
         casting: ['Robert Downey Jr.', 'Chris Evans', 'Mark Ruffalo', 'Chris Hemsworth'],
         duration: '143 minutes',
         genre: 'Action, Adventure, Science Fiction',
-        releaseDate: 'May 4, 2012'
+        releaseDate: 'May 4, 2012',
+        image: "../images/movies/theAvengers.png"
     },
     {
         title: 'The Prestige',
@@ -150,7 +167,8 @@ export const peliculas = [
         casting: ['Hugh Jackman', 'Christian Bale', 'Scarlett Johansson', 'Michael Caine'],
         duration: '130 minutes',
         genre: 'Drama, Mystery, Thriller',
-        releaseDate: 'October 20, 2006'
+        releaseDate: 'October 20, 2006',
+        image: "../images/movies/thePrestige.png"
     },
     {
         title: 'The Revenant',
@@ -158,6 +176,7 @@ export const peliculas = [
         casting: ['Leonardo DiCaprio', 'Tom Hardy', 'Domhnall Gleeson', 'Will Poulter'],
         duration: '156 minutes',
         genre: 'Adventure, Drama, Thriller',
-        releaseDate: 'December 25, 2015'
+        releaseDate: 'December 25, 2015',
+        image: "../images/movies/theRevenant.png"
     },
 ];

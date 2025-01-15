@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molengo&family=Oswald:wght@200..700&display=swap');
 
 * {
     padding: 0;
@@ -6,13 +7,28 @@
     box-sizing: border-box;
 }
 
+body {
+    background: black;
+}
+
+.section__bar {
+    border-bottom: 2px solid white;
+}
 /*Estilos del título principal */
 .title__movies {
     display: flex;
     flex-flow: column nowrap;
-    padding: 20px 40px; 
-    color: rgb(5, 5, 63);
+    padding: 20px 40px;
+}
+
+.title {
+    color: #66251D;
+    font-family: "Oswald", serif;
+    font-weight: 500; 
+    font-style: normal;
     text-align: center;
+    font-size: clamp(5rem, 4.2174rem + 3.4783vw, 7rem);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white, -2px 2px 0 white, 2px 2px 0 white, 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white, 5px 5px white, 6px 6px white, 7px 7px white, 8px 8px white, 9px 9px white;
 }
 
 /*Barra de Búsqueda*/
