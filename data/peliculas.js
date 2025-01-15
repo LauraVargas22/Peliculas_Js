@@ -158,5 +158,5 @@ export const peliculas = [
         duration: '156 minutes',
         genre: 'Adventure, Drama, Thriller',
         releaseDate: 'December 25, 2015'
-    }
-]
+    },
+];

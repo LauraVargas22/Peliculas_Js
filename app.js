@@ -1,3 +1,3 @@
 import { peliculas } from "./data/peliculas.js";
-import { SearchList } from "./js/barra.js";
+import * as archivo from "./js/barra.js"
 
