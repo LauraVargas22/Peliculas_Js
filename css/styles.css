@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,11 +7,10 @@
 }
 
 /*Estilos del título principal */
-.title {
+.title__movies {
     display: flex;
     flex-flow: column nowrap;
     padding: 20px 40px; 
-    font-size: clamp(1.2rem, -3.6rem + 10vw, 2.8rem);
     color: rgb(5, 5, 63);
     text-align: center;
 }
@@ -26,6 +27,7 @@
 .search-box {
     margin-top: 1rem;
     margin-left: 2rem;
+    margin-bottom: 2rem;
     background: var(--input-bg);
     border-radius: 0.5rem;
     padding: 0.75rem;

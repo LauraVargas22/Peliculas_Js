@@ -12,51 +12,47 @@ export const SearchList = (peliculas, searchTerm = '') => {
     return movieName;
 }
 
-const resultBox = document.querySelector(".results"); //Resultados de búsqueda
-const inputBox = document.querySelector(".search-bar"); // Campo de entrada de texto
-const movieInfo = document.getElementById("movieInfo");
+export const resultBox = document.querySelector(".results"); //Resultados de búsqueda
+export const inputBox = document.querySelector(".search-bar"); // Campo de entrada de texto
+export const movieInfo = document.getElementById("movieInfo");
 
-const moviesInfo = (peliculas, searchTerm = '') => {
-    let peliculaInfo = {};
-    for (const {title, image} of peliculas) {
-        if (image.includes(searchTerm.toLowerCase())) {
-            movieName.image(image);
-        }
-    }
-    return peliculaInfo;
-}
 
 //Representa resultados de búsqueda
-const displayResults = function (result) { 
-    const resultHTML = result.map(function (movieInfo) {return `<li onclick=selectInput(this)>${movieInfo}</li onclick=selectInput>`;});
+export const displayResults = function (result) { 
+    const resultHTML = result.map(function (movieInfo) {return `<li onclick="selectInput('${movieInfo}')">${movieInfo}</li>`;});
     resultBox.innerHTML = '<ul>' + resultHTML.join ("") + '</ul>';
 };
 // Detecta la pulsación sobre la barra de búsqueda
 inputBox.onkeyup = function (e) {
     let result = [];
     const input = inputBox.value.toLowerCase();
-
+    
     if (input.length === 0) {
         resultBox.innerHTML = "";
         return;
     }
-
+    
     if (input.length) {
         result = SearchList(peliculas, '').filter ((movieInfo) => {return movieInfo.toLowerCase().includes(input);});
-
+        
         displayResults(result);
     }
 };
 
-function selectInput(item) {
+//FIXME
+export const moviesInfo = (description) => {
+    return peliculas.find((pelicula) => pelicula.description === description);
+}
+
+export function selectInput(item) {
     const selected = item.innerText;
     inputBox.value = selected;
     resultBox.innerHTML = "";
 
     if (moviesInfo[selected]) {
-        movieInfo.src = `../images${moviesInfo[selected]}`;
+        movieInfo.textContent = `${moviesInfo[selected]}`;
         movieInfo.style.display = "block";
     } else {
-        movieInfo.style.display = "none";
+        bookText.style.display = "none";
     }
 }

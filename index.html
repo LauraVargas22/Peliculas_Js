@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
     <title>Movies Cinema</title>
 </head>
 <body>
-    <div class="title">
+    <div class="title__movies">
         <h1>Movies Cinema</h1>
-       </div>
-       <!--Barra de búsqueda-->
-       <div class="search-box">
+    </div>
+    <section>
+        <!--Barra de búsqueda-->
+        <div class="search-box">
             <div class="row">
                 <!--Icono de búsqueda (lupa)-->
                 <button><img src="./images/hicon2.png"></button>
@@ -20,13 +23,20 @@
                 <button><img src="./images/hicon.png"></button>
             </div>
             <div class="results"></div>
-            <div class="image-container">
-                <img src="" id="movieInfo" alt="Movie Image" style="display: none;">
+        </div>
+    </section>
+    <section class="cards__movies">
+        <div class="title__cards">
+            <h2 class="subtitle">Movies</h2>
+        </div>
+        <div class="row cotainer">
+            <div id="moviesImages" class="divImages">
+
             </div>
-       </div>
+        </div>
+    </section>
 
 
-
-    <script type="module" src="app.js" defer></script>
+    <script type="module" src="./js/barra.js" defer></script>
 </body>
 </html>
