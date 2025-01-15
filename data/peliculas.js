@@ -5,7 +5,8 @@ export const peliculas = [
         casting: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page', 'Tom Hardy', 'Marion Cotillard'],
         duration: '148 minutes',
         genre: 'Science Fiction, Action, Thriller',
-        releaseDate: 'July 16, 2010'
+        releaseDate: 'July 16, 2010',
+        image: "../images/inception.png"
     },
     {
         title: 'The Shawshank Redemption',
