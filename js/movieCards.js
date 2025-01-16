@@ -1,5 +1,7 @@
 import { peliculas } from "../data/peliculas.js";
 
+export const btnSeeMore = document.querySelector('#btnSeeMore');
+
 export const movieCards = (peliculas) => {
     const moviesImages = document.getElementById('moviesImages');
     moviesImages.classList.add('row', 'row-cols-1', 'row-cols-md-2', 'row-cols-lg-3');

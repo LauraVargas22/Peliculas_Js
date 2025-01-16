@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="js/sweetalert2/dist/sweetalert2.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/seeMore.css">
+
     <title>Movies Cinema</title>
 </head>
 <body>
@@ -37,8 +37,22 @@
         </div>
         <!--Prueba Ventana Emergente-->
         <div id="moviesWindow" class="row row-cols-1 row-cols-lg-2" id="modal-container">
-            
-        </div>
+            <div class="col">
+                <img class="img-fluid" src="images/movies/avatar.png" alt="Image Movie">
+            </div>
+            <div class="col">
+                <h1 class="movie__title">${title}</h1>
+                <p class="movie__description">${description}</p>
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                        <h3>${casting}</h3>
+                    </div>
+                    <div class="col">
+                        <h3>${duration, genre, releaseDate}</h3>
+                    </div>
+                </div>
+            </div>
+            <button id="close">Cerrar</button>
     </section>
     <script type="module" src="app.js" defer></script>
 </body>
