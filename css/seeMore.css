@@ -2,51 +2,41 @@
     box-sizing: border-box;
 }
 
-.btnClose {
-    background-color: #47a386;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 25px;
-}
 
-.modal-container {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    justify-content: center;
+#moviesWindow {
+    display: none;
+    background: whitesmoke;
+    padding: 2rem;
     position: fixed;
-    pointer-events: none;
-    opacity: 0;  
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
 }
 
-.show {
-    pointer-events: auto;
-    opacity: 1;
+.img-fluid {
+    width: 100%;
+    height: max-content;
 }
 
-.modal {
-    background-color: #fff;
-    width: 600px;
-    max-width: 100%;
-    padding: 30px 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.movies__title{
     text-align: center;
+    font-family: "Patrick Hand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: brown;
 }
 
-.modal h1 {
-    margin: 0;
-}
-
-.modal p {
-    opacity: 0.7;
-    font-size: 14px;
+.movies__text {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: clamp(1.3rem, 1.2217rem + 0.3478vw, 1.5rem);
+    font-family: "Molengo", serif;
+    font-weight: 400;
 }

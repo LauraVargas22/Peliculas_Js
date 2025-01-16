@@ -18,7 +18,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: black;
-    height: 32rem;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;

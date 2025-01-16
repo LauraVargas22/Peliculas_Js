@@ -14,7 +14,7 @@ export const movieCards = (peliculas) => {
             <img class="img-fluid" src="${image}" alt="Movie Image">
             <p class="movie__description">${description}</p>
             <div clzass="text-center">
-                <button id="btnSeeMore" class="btn btn-danger">See More</button>
+                <button id="btnSeeMore" class="btn btn-danger" onclick="showPopup(peliculas)">See More</button>
             </div>
         </div>
         `;
