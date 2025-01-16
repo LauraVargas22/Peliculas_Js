@@ -11,7 +11,7 @@ export const movieCards = (peliculas) => {
             <h1 class="movie__title">${title}</h1>
             <img class="img-fluid" src="${image}" alt="Movie Image">
             <p class="movie__description">${description}</p>
-            <div class="text-center">
+            <div clzass="text-center">
                 <button id="btnSeeMore" class="btn btn-danger">See More</button>
             </div>
         </div>
