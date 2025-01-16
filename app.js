@@ -2,8 +2,7 @@ import { peliculas } from "./data/peliculas.js";
 import * as archivo from "./js/barra.js"
 import { movieCards } from "./js/movieCards.js";
 
-
-const promesa = new Promise((resolve, reject) => {
+const promesaCards  = new Promise((resolve, reject) => {
     setTimeout(() => {
         try {
             movieCards(peliculas);
@@ -14,7 +13,7 @@ const promesa = new Promise((resolve, reject) => {
     }, 2000);
   });
   
-promesa.then((message) => {
+promesaCards.then((message) => {
     console.log(message);
 })
 .catch(err => console.warn(err));
