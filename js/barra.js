@@ -18,41 +18,46 @@ export const movieInfo = document.getElementById("movieInfo");
 
 
 //Representa resultados de búsqueda
-export const displayResults = function (result) { 
-    const resultHTML = result.map(function (movieInfo) {return `<li onclick="selectInput('${movieInfo}')">${movieInfo}</li>`;});
-    resultBox.innerHTML = '<ul>' + resultHTML.join ("") + '</ul>';
+export const displayResults = (result) => { 
+    resultBox.innerHTML = result
+        .map(title => `<li class="result-item">${title}</li>`)
+        .join("");
+
+    // Agregar evento de clic a cada elemento de la lista
+    document.querySelectorAll('.result-item').forEach(item => {
+        item.addEventListener('click', () => selectInput(item.innerText));
+    });
 };
 // Detecta la pulsación sobre la barra de búsqueda
-inputBox.onkeyup = function (e) {
-    let result = [];
-    const input = inputBox.value.toLowerCase();
+inputBox.addEventListener('keyup', () => {
+    const input = inputBox.value.trim().toLowerCase();
     
-    if (input.length === 0) {
+    if (!input) {
         resultBox.innerHTML = "";
         return;
     }
     
-    if (input.length) {
-        result = SearchList(peliculas, '').filter ((movieInfo) => {return movieInfo.toLowerCase().includes(input);});
-        
-        displayResults(result);
-    }
-};
+    const result = SearchList(peliculas, input);
+    displayResults(result);
+});
 
-//FIXME
-export const moviesInfo = (description) => {
-    return peliculas.find((pelicula) => pelicula.description === description);
+// Función para obtener información de una película
+export const moviesInfo = (peliculas, title) => {
+    return peliculas.find((pelicula) => pelicula.title.toLowerCase() === title.toLowerCase());
 }
 
-export function selectInput(item) {
-    const selected = item.innerText;
-    inputBox.value = selected;
+// Selección de película al hacer clic en la lista
+export function selectInput(selectedTitle) {
+    inputBox.value = selectedTitle;
     resultBox.innerHTML = "";
 
-    if (moviesInfo[selected]) {
-        movieInfo.textContent = `${moviesInfo[selected]}`;
-        movieInfo.style.display = "block";
-    } else {
-        bookText.style.display = "none";
+    const movie = moviesInfo(peliculas, selectedTitle);
+
+    if (movie) {
+        Swal.fire({
+            title: `${movie.title}`,
+            text: `${movie.description}`,
+            icon: "info"
+        });
     }
 }

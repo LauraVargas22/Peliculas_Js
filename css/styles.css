@@ -102,3 +102,13 @@ input {
     background: var(--item-hover);
     border-radius: 0.25rem;
 }
+
+.result-item {
+    list-style: none;
+    padding: 10px;
+}
+
+.result-item:hover {
+    background: #66251D;
+    color: white;
+}
