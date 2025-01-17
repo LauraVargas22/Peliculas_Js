@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-
+/*Estilos Pop up*/
 .popup {
     display: none; /* Oculto por defecto */
     background: whitesmoke;
@@ -19,6 +19,7 @@
     max-height: 28rem;
 }
 
+/*Deslizados pop up*/
 .popup::-webkit-scrollbar {
     width: 0.3rem;
 }
@@ -39,11 +40,13 @@
     cursor: pointer;
 }
 
+/*Imagén Pop up*/
 .img-fluid {
     width: 100%;
     height: max-content;
 }
 
+/*Título Pop up*/
 .movies__title{
     text-align: left;
     font-family: "Patrick Hand", serif;
@@ -53,6 +56,7 @@
     color: brown;
 }
 
+/*Descripción Pop up*/
 .movies__text {
     background-color: black;
     color: white;
@@ -62,6 +66,7 @@
     font-weight: 400;
 }
 
+/* Texto de casting, duración, fecha de lanzamiento pop up*/
 h3 {
     font-size: clamp(1.5rem, 1.3043rem + 0.8696vw, 2rem);
     font-family: "Molengo", serif;

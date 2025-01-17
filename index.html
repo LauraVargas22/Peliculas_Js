@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importación de Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Importación de librería Sweetalert2-->
     <script src="js/sweetalert2/dist/sweetalert2.js" defer></script>
     <link rel="stylesheet" href="js/sweetalert2/dist/sweetalert2.css">
+    <!--Importación de archivos CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/seeMore.css">
-
     <title>Movies Cinema</title>
 </head>
 <body>
     <div class="front">
+        <!--Contenedor título principal de la página-->
         <div class="title__movies">
             <h1 class="title">Movies Cinema</h1>
         </div>
@@ -27,41 +30,47 @@
                     <!--Icono de filtro-->
                     <button><img src="./images/hicon.png"></button>
                 </div>
-                <div class="results"></div>
+                <div class="results"></div> <!--Despliegue de resultados-->
             </div>
         </section>
     </div>
+    <!--Sección cartas con información de cada película-->
     <section class="cards__movies">
+        <!--Título de la sección-->
         <div class="title__cards">
             <h2 class="subtitle">Movies</h2>
         </div>
+        <!--Contendeor de las cartas-->
         <div id="moviesImages" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
+            <!--Aquí se llamarán las cartas desde archivo JS-->
         </div>
-        <!--Prueba Ventana Emergente-->
+        <!--Ventana Emergente-->
         <div class="popup" id="popup">
             <div class="row row-cols-1 row-cols-lg-2 popup-content">
                 <div class="col">
+                    <!--Imágen película-->
                     <img id="popUpImage" class="img-fluid" src="" alt="Image Movie">
                 </div>
                 <div class="col">
-                    <h1 class="movies__title" id="popUpTitle"></h1>
-                    <p class="movies__text" id="popUpText"></p>
+                    <h1 class="movies__title" id="popUpTitle"></h1> <!--Título película-->
+                    <p class="movies__text" id="popUpText"></p> <!--Descripción película-->
                     <div class="row row-cols-1 row-cols-lg-2">
                         <div class="col">
-                            <h3 class="casting" id="popUpCasting"></h3>
+                            <h3 class="casting" id="popUpCasting"></h3> <!--Casting película-->
                         </div>
                         <div class="col">
-                            <h3 class="duration" id="popUpDuration"></h3>
-                            <h3 class="genre" id="popUpGenre"></h3>
-                            <h3 class="releaseDate" id="popUpDate"></h3>
+                            <h3 class="duration" id="popUpDuration"></h3> <!--Duración película-->
+                            <h3 class="genre" id="popUpGenre"></h3> <!--Género película-->
+                            <h3 class="releaseDate" id="popUpDate"></h3> <!--Fecha de lanzamiento película-->
                         </div>
                     </div>
+                    <!--Botón para cerrar ventana emergente-->
                     <button id="popUpClose" class="close" onclick="closePopup()">&times;</button>
                 </div>
             </div>
         </div>
     </section>
+    <!--Llamado archivo principal JS-->
     <script type="module" src="app.js" defer></script>
 </body>
 </html>

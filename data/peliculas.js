@@ -1,3 +1,4 @@
+//Data a exportar para la elaboración de la página
 export const peliculas = [
     {
         title: 'Inception',

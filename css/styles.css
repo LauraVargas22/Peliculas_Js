@@ -12,24 +12,27 @@ body {
     background: black;
 }
 
+/*Estilos del deslizador*/
 body::-webkit-scrollbar {
     width: 0.3rem;
 }
- /*Estilos del deslizador*/
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(#3b2d2b, #300a05);
     border-radius: 1rem;
 }
 
+/*Contenedor encabezado*/
 .front {
     background-image: url('../images/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .section__bar {
     border-bottom: 2px solid white;
 }
+
 /*Estilos del título principal */
 .title__movies {
     display: flex;
