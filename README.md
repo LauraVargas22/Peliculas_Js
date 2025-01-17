@@ -1,6 +1,6 @@
 # Movies Cinema
 ## Descripción:
-Este proyecto consiste en el desarrolló de un aplicativo web el cual permite buscar películas, su visualización con su información, toda la información se encuentra en un archivo JS. El proyecto se puede visualizar en el siguiente link: 
+Este proyecto consiste en el desarrolló de un aplicativo web el cual permite buscar películas, su visualización con su información, toda la información se encuentra en un archivo JS. El proyecto se puede visualizar en el siguiente link: **https://moviecinemax.netlify.app/**
 
 ## Barra de Búsqueda:
 En la barra de búsqueda el usuario podrá buscar el nombre de la película, los cuales se obtienen del archivo con la información agregándolos a una lista como los posibles resultados de búsqueda.
