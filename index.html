@@ -37,9 +37,26 @@
 
         </div>
         <!--Prueba Ventana Emergente-->
-        <div id="moviesWindow" style="display:none;">
-            <div class="row row-cols-1 row-cols-lg-2" id="popup">
-                
+        <div class="popup" id="popup">
+            <div class="row row-cols-1 row-cols-lg-2 popup-content">
+                <div class="col">
+                    <img id="popUpImage" class="img-fluid" src="" alt="Image Movie">
+                </div>
+                <div class="col">
+                    <h1 class="movies__title" id="popUpTitle"></h1>
+                    <p class="movies__text" id="popUpText"></p>
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <h3 class="casting" id="popUpCasting"></h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="duration" id="popUpDuration"></h3>
+                            <h3 class="genre" id="popUpGenre"></h3>
+                            <h3 class="releaseDate" id="popUpDate"></h3>
+                        </div>
+                    </div>
+                    <button id="popUpClose" class="close" onclick="closePopup()">&times;</button>
+                </div>
             </div>
         </div>
     </section>

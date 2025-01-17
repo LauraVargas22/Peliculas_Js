@@ -1,7 +1,7 @@
 import { peliculas } from "./data/peliculas.js";
 import * as archivo from "./js/barra.js"
 import { movieCards } from "./js/movieCards.js";
-import { hidePopup, showPopup } from "./js/seeMore.js";
+import { closePopup, showPopup } from "./js/seeMore.js";
 
 const promesaCards  = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -14,15 +14,18 @@ const promesaCards  = new Promise((resolve, reject) => {
     }, 2000);
   });
   
-promesaCards.then((message) => {
-    console.log(message);
-})
-.catch(err => console.warn(err));
+promesaCards
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((err) => {
+        console.warn(err)
+    });
 
 const promesaInfo  = new Promise((resolve, reject) => {
     setTimeout(() => {
         try {
-            showPopup(peliculas);
+            showPopup(pelicula);
             resolve('Movies information loaded successfully');
         } catch (error) {
             reject('Error movies information not found');
@@ -30,24 +33,29 @@ const promesaInfo  = new Promise((resolve, reject) => {
     }, 2000);
   });
   
-promesaInfo.then((message) => {
-    console.log(message);
-})
-.catch(err => console.warn(err));
+promesaInfo
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((err) => {
+        console.warn(err)
+    });
 
-const promesaCloseInfo  = new Promise((resolve, reject) => {
+const promesaClose  = new Promise((resolve, reject) => {
     setTimeout(() => {
         try {
-            hidePopup();
-            resolve('Close movies information successfully');
+            closePopup();
+            resolve('Movies information loaded successfully');
         } catch (error) {
-            reject('Error close movies information');
+            reject('Error movies information not found');
         }
     }, 2000);
   });
-  
-promesaCloseInfo.then((message) => {
-    console.log(message);
-})
-.catch(err => console.warn(err));
 
+promesaClose
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((err) => {
+        console.warn(err)
+    });

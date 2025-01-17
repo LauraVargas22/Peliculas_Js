@@ -1,52 +1,26 @@
 import { peliculas } from "../data/peliculas.js";
-import { moviesInfo } from "./barra.js";
 
-export const seeMore = (peliculas) => {
-    const moviesWindow = document.getElementById('popup');
-    moviesWindow.classList.add('row', 'row-cols-1 row-cols-lg-2');
+// Función para mostrar la ventana emergente con información de la película
+export function showPopup(pelicula) {
+    const popup = document.getElementById("popup");
+    popup.style.display = "block";
 
-    for (const {title, description, image, casting, duration, genre, releaseDate} of peliculas) {
-        const divInfo = document.createElement('div');
-        divInfo.classList.add('col');
+    const { title, description, image, casting, duration, genre, releaseDate } = pelicula;
+    
+    document.getElementById('popUpImage').src = image;
+    document.getElementById('popUpTitle').textContent = title;
+    document.getElementById('popUpText').textContent = description;
+    document.getElementById('popUpCasting').textContent = `Casting: ${casting}`;
+    document.getElementById('popUpDuration').textContent = `Duration: ${duration}`;
+    document.getElementById('popUpGenre').textContent = `Genre: ${genre}`;
+    document.getElementById('popUpDate').textContent = `Release Date: ${releaseDate}`;
 
-        divInfo.innerHTML = `
-        <div class="col">
-            <img class="img-fluid" src="${image}" alt="Image Movie">
-        </div>
-        <div class="col">
-            <h1 class="movies__title">${title}</h1>
-            <p class="movies__text">${description}</p>
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col">
-                    <h3>${casting}</h3>
-                </div>
-                <div class="col">
-                    <h3>${duration}, ${genre}, ${releaseDate}</h3>
-                </div>
-            </div>
-        </div>
-        <button id="btnClose" class="btn btn-danger" onclick="hidePopup()">Cerrar</button>
-        `;
-        moviesWindow.appendChild(divInfo);
-    }
-    moviesInfo.classList.add('showPopup');
-};
-
-export function showPopup(peliculas) {
-    const overlay = document.getElementById('moviesWindow');
-    const popup = document.getElementById('popup');
-    moviesWindow.style.display = 'block';
-    setTimeout(() => {
-        popup.classList.add('active');
-        seeMore(peliculas);
-    }, 10);
+    const btnClose = document.getElementById('popUpClose');
+    btnClose.addEventListener('click', closePopup);
 }
 
-export function hidePopup() {
-    const moviesWindow = document.getElementById('moviesWindow');
+// Función para cerrar la ventana emergente
+export const closePopup = () => {
     const popup = document.getElementById('popup');
-    popup.classList.remove('active');
-    setTimeout(() => {
-        moviesWindow.style.display = 'none';
-    }, 300);
+    popup.style.display = "none";
 }
