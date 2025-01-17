@@ -16,7 +16,7 @@
     z-index: 1000;
     animation: fadeIn 0.3s ease-out;
     overflow-y: auto;
-    max-height: 28rem;
+    max-height: 40rem;
 }
 
 /*Deslizados pop up*/
