@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Molengo&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
 
 * {
     padding: 0;
@@ -20,6 +21,12 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
 }
 
+.front {
+    background-image: url('../images/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .section__bar {
     border-bottom: 2px solid white;
 }
@@ -32,8 +39,8 @@ body::-webkit-scrollbar-thumb {
 
 .title {
     color: #66251D;
-    font-family: "Oswald", serif;
-    font-weight: 500; 
+    font-family: "Luckiest Guy", serif;
+    font-weight: 500;
     font-style: normal;
     text-align: center;
     font-size: clamp(5rem, 4.2174rem + 3.4783vw, 7rem);
