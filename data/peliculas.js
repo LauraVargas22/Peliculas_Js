@@ -7,7 +7,7 @@ export const peliculas = [
         duration: '148 minutes',
         genre: 'Science Fiction, Action, Thriller',
         releaseDate: 'July 16, 2010',
-        image: "../images/movies/inception.png"
+        image: "../images/inception.png"
     },
     {
         title: 'The Shawshank Redemption',
@@ -16,7 +16,7 @@ export const peliculas = [
         duration: '142 minutes',
         genre: 'Drama',
         releaseDate: 'September 14, 1994',
-        image: "../images/movies/redemption.png"
+        image: "../images/redemption.png"
     },
     {
         title: 'The Dark Knight',
@@ -25,7 +25,7 @@ export const peliculas = [
         duration: '152 minutes',
         genre: 'Action, Crime, Drama',
         releaseDate: 'July 18, 2008',
-        image: "../images/movies/darkKnight.png"
+        image: "../images/darkKnight.png"
     },
     {
         title: 'Pulp Fiction',
@@ -34,7 +34,7 @@ export const peliculas = [
         duration: '154 minutes',
         genre: 'Crime, Drama',
         releaseDate: 'October 14, 1994',
-        image: "../images/movies/pulpFiction.png"
+        image: "../images/pulpFiction.png"
     },
     {
         title: 'Forrest Gump',
@@ -43,7 +43,7 @@ export const peliculas = [
         duration: '142 minutes',
         genre: 'Drama, Comedy',
         releaseDate: 'July 6, 1994',
-        image: "../images/movies/forrestGump.png"
+        image: "../images/forrestGump.png"
     },
     {
         title: 'Gladiator',
@@ -52,7 +52,7 @@ export const peliculas = [
         duration: '155 minutes',
         genre: 'Drama, Action, History',
         releaseDate: 'May 5, 2000',
-        image: "../images/movies/gladiator.png"
+        image: "../images/gladiator.png"
     },
     {
         title: 'The Matrix',
@@ -61,7 +61,7 @@ export const peliculas = [
         duration: '136 minutes',
         genre: 'Science Fiction, Action',
         releaseDate: 'March 31, 1999',
-        image: "../images/movies/theMatrix.png"
+        image: "../images/theMatrix.png"
     },
     {
         title: 'Titanic',
@@ -70,7 +70,7 @@ export const peliculas = [
         duration: '195 minutes',
         genre: 'Romance, Drama',
         releaseDate: 'December 19, 1997',
-        image: "../images/movies/titanic.png"
+        image: "../images/titanic.png"
     },
     {
         title: 'Avatar',
@@ -79,7 +79,7 @@ export const peliculas = [
         duration: '162 minutes',
         genre: 'Science Fiction, Adventure',
         releaseDate: 'December 18, 2009',
-        image: "../images/movies/avatar.png"
+        image: "../images/avatar.png"
     },
     {
         title: 'The Godfather',
@@ -88,7 +88,7 @@ export const peliculas = [
         duration: '175 minutes',
         genre: 'Crime, Drama',
         releaseDate: 'March 24, 1972',
-        image: "../images/movies/theGodfather.png"
+        image: "../images/theGodfather.png"
     },
     {
         title: 'The Lion King',
@@ -97,7 +97,7 @@ export const peliculas = [
         duration: '88 minutes',
         genre: 'Animation, Adventure, Drama',
         releaseDate: 'June 24, 1994',
-        image: "../images/movies/theLionKing.png"
+        image: "../images/theLionKing.png"
     },
     {
         title: 'The Silence of the Lambs',
@@ -106,7 +106,7 @@ export const peliculas = [
         duration: '118 minutes',
         genre: 'Thriller, Crime, Drama',
         releaseDate: 'February 14, 1991',
-        image: "../images/movies/SilenceLambs.png"
+        image: "../images/SilenceLambs.png"
     },
     {
         title: 'Schindler\'s List',
@@ -115,7 +115,7 @@ export const peliculas = [
         duration: '195 minutes',
         genre: 'History, Drama, War',
         releaseDate: 'December 15, 1993',
-        image: "../images/movies/schindlers.png"
+        image: "../images/schindlers.png"
     },
     {
         title: 'Interstellar',
@@ -124,7 +124,7 @@ export const peliculas = [
         duration: '169 minutes',
         genre: 'Science Fiction, Drama, Adventure',
         releaseDate: 'November 7, 2014',
-        image: "../images/movies/interstellar.png"
+        image: "../images/interstellar.png"
     },
     {
         title: 'Star Wars: A New Hope',
@@ -133,7 +133,7 @@ export const peliculas = [
         duration: '121 minutes',
         genre: 'Science Fiction, Adventure',
         releaseDate: 'May 25, 1977',
-        image: "../images/movies/starwars.png"
+        image: "../images/starwars.png"
     },
     {
         title: 'Jaws',
@@ -142,7 +142,7 @@ export const peliculas = [
         duration: '124 minutes',
         genre: 'Horror, Thriller',
         releaseDate: 'June 20, 1975',
-        image: "../images/movies/jaws.png"
+        image: "../images/jaws.png"
     },
     {
         title: 'Mad Max: Fury Road',
@@ -151,7 +151,7 @@ export const peliculas = [
         duration: '120 minutes',
         genre: 'Action, Science Fiction, Adventure',
         releaseDate: 'May 15, 2015',
-        image: "../images/movies/madMax.png"
+        image: "../images/madMax.png"
     },
     {
         title: 'The Avengers',
@@ -160,7 +160,7 @@ export const peliculas = [
         duration: '143 minutes',
         genre: 'Action, Adventure, Science Fiction',
         releaseDate: 'May 4, 2012',
-        image: "../images/movies/theAvengers.png"
+        image: "../images/theAvengers.png"
     },
     {
         title: 'The Prestige',
@@ -169,7 +169,7 @@ export const peliculas = [
         duration: '130 minutes',
         genre: 'Drama, Mystery, Thriller',
         releaseDate: 'October 20, 2006',
-        image: "../images/movies/thePrestige.png"
+        image: "../images/thePrestige.png"
     },
     {
         title: 'The Revenant',
@@ -178,6 +178,6 @@ export const peliculas = [
         duration: '156 minutes',
         genre: 'Adventure, Drama, Thriller',
         releaseDate: 'December 25, 2015',
-        image: "../images/movies/theRevenant.png"
+        image: "../images/theRevenant.png"
     },
 ];

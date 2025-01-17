@@ -11,7 +11,7 @@ export function showPopup(pelicula) {
     const { title, description, image, casting, duration, genre, releaseDate } = pelicula;
     
     // Actualiza el contenido del popup con los detalles de la película, de acuerdo al ID establecido en el HTML
-    document.getElementById('popUpImage').src = `./images/movies/${image}`;
+    document.getElementById('popUpImage').src = image;
     document.getElementById('popUpTitle').textContent = title;
     document.getElementById('popUpText').textContent = description;
     document.getElementById('popUpCasting').textContent = `Casting: ${casting}`;

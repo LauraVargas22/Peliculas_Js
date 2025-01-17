@@ -20,7 +20,7 @@ export const movieCards = (peliculas) => {
         divItems.innerHTML = /*html*/`
         <div class="card">
             <h1 class="movie__title">${title}</h1>
-            <img class="img-fluid" src="../images/movies/${image}" alt="Movie Image">
+            <img class="img-fluid" src="${image}" alt="Movie Image">
             <p class="movie__description">${description}</p>
             <div class="text-center">
                 <button class="btn btn-danger btnSeeMore">See More</button>
