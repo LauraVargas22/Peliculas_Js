@@ -1,25 +1,25 @@
-# Movies Cinema
-## Descripción:
-Este proyecto consiste en el desarrolló de un aplicativo web el cual permite buscar películas, su visualización con su información, toda la información se encuentra en un archivo JS. El proyecto se puede visualizar en el siguiente link: **https://moviecinemax.netlify.app/**
+# 🎬 Movies Cinema
+## 📖 Descripción:
+Movies Cinema es una aplicación web que permite buscar y visualizar información de películas de manera sencilla e interactiva.
+Toda la información de las películas proviene de un archivo JavaScript (data.js).
+Puedes explorar la aplicación aquí **https://moviecinemax.netlify.app/**
 
-## Barra de Búsqueda:
-En la barra de búsqueda el usuario podrá buscar el nombre de la película, los cuales se obtienen del archivo con la información agregándolos a una lista como los posibles resultados de búsqueda.
-![alt text](./images/image.png)
-
-Al dar click sobre uno de ellos se desplegará una alerta con la descripción de la película.
-    
-![alt text](./images/image1.png)
+## 🔎 Barra de Búsqueda:
+El usuario puede buscar una película por su nombre.
+A medida que escribe, se muestran sugerencias basadas en la información disponible. Al hacer clic en una sugerencia, se despliega una alerta con una breve descripción de la película.
 
 
-## Cartas de Películas:
-Con la información obtenida de la data se crean las cartas por cada película que se encuentre en nuestro archivo con la información, de esta manera si se desea agregar una nueva película esta se crea automáticamente sin realizar cambios en el archivo HTML.
-![alt text](./images/image2.png)
+## 🎥 Cartas de Películas:
+Cada película se representa como una carta que se genera dinámicamente a partir de los datos.
+Si deseas agregar nuevas películas, solo debes actualizar el archivo de datos, sin modificar el HTML.
 
-## Ventana Modal:
-En la carta creada se define un botón, al presionarlo este me permite visualizar una ventana emergente con información adicional sobre la película seleccionada, este contiene un botón el cual le permite salir de la ventana.
-![alt text](./images/image4.png)
+## 🪟 Ventana Modal:
+Cada carta incluye un botón que abre una ventana modal con información adicional sobre la película.
+Dentro del modal, puedes cerrar fácilmente la vista con un botón de salida.
 
-## Tecnologías Utilizadas:
-    - HTML                                     - JavaScript
-    - CSS                                      - Bootstrap                                     
-    - Librería Sweetalert
+## 🛠️ Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
+- Bootstrap (framework de estilos)
+- SweetAlert (librería para alertas interactivas)
